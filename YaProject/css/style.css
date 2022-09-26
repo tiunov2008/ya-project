@@ -35,7 +35,7 @@
   width: 500px;
   position: absolute;
   z-index: -10;
-  top: 450px;
+  top: 449px;
   left: 0;
   border-radius: 0 0 80% 0;
 }
@@ -296,10 +296,37 @@
 
 @media (max-width: 1440px) {
   .footer img {
-    width: 500px;
+    width: 450px;
+  }
+  .hero-icon {
+    align-items: start;
+    margin-right: 25px;
+  }
+  .hero-icon img {
+    width: 450px;
+  }
+  .hero-icon::after {
+    width: 450px;
+    height: 350px;
+  }
+  .hero-icon::before {
+    top: 349px;
+    width: 450px;
+  }
+  .hero-img {
+    display: none;
+  }
+  .hero-img-media {
+    display: flex;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+  .hero-top_info-media {
+    align-items: center;
+    display: flex;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .certificates, .hero, .portfolio, .footer-wrapper {
     margin: 30px 5% 0;
   }
